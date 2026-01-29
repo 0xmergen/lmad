@@ -1,0 +1,61 @@
+{
+    "name": "0xmergen/lmad",
+    "description": "LMAD - Laravel MCP API Discovery Package",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "lmad",
+        "mcp",
+        "api",
+        "discovery"
+    ],
+    "authors": [
+        {
+            "name": "0xmergen",
+            "email": "0xronin1925@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^12.0",
+        "laravel/mcp": "^0.5"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0",
+        "pestphp/pest": "^3.0|^4.0",
+        "laravel/pint": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lmad\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lmad\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lmad\\LmadServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "pint": "vendor/bin/pint",
+        "pint:check": "vendor/bin/pint --test"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
