@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="docs/banner.jpg" alt="LMAD - Laravel MCP API Discovery" width="100%">
+</div>
+
 # LMAD - Laravel MCP API Discovery
 
 A Laravel 12 MCP (Model Context Protocol) package that provides AI agents with comprehensive API discovery and analysis capabilities. LMAD enables AI coding assistants to understand your Laravel application's API structure, validation rules, and response schemas.
